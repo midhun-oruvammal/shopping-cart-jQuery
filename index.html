@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1>Shopping Cart</h1>
+            <div class="search-container">
+                <input type="text" class="search-box" id="search-box" placeholder="Search Here...">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="product-page">
+            <div class="sort-bar" id="sort-bar">
+                <div class="sort-container">
+                    <h2>Sort By</h2>
+                    <select id="sort-items" class="sort-items">
+                        <option value="">Select option</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+                <div class="filter-container">
+                    <h2>Filter By</h2>
+                    <select class="filter-items" id="filter-items">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-items-container" id="product-items-container">
+            </div>
+        </div>
+        <div class="cart-page">
+            <h1 class="cart-title">Your Cart</h1>
+            <div id="cart" class="cart">
+            </div>
+            <div id="cart-price" class="cart-price"></div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+            <div id="empty-cart" class="emptycart-image-wrapper">
+                <img class="emptycart-image" src="img/empty-cart.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/fed5f2402d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
